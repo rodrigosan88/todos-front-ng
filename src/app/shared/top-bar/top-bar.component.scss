@@ -1,0 +1,11 @@
+.top-bar {
+    position: fixed;
+    left: 250px;
+    width: calc(100% - 250px);
+    height: 60px;
+    background-color: #000000;
+}
+
+.top-bar-spacer {
+    flex: 1 1 auto;
+  }
