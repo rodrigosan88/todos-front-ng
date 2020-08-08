@@ -7,9 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TopBarComponent implements OnInit {
 
+  opened : boolean = true;
+
   constructor() { }
 
   ngOnInit() {
+  }
+
+  toggleSidenav() {
+    this.opened = !this.opened;
   }
 
 }

@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { MenuItem } from 'src/app/models/menu-item.model';
 
 @Component({
   selector: 'app-side-bar',
@@ -7,6 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SideBarComponent implements OnInit {
 
+  @Input()
+  opened : boolean = true;
+
+  @Input()
+  menuItems : MenuItem[] = [];
+  
   constructor() { }
 
   ngOnInit() {

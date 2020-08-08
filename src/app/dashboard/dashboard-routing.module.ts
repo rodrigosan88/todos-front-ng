@@ -1,9 +1,9 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { WrapperComponent } from './wrapper/wrapper.component';
+import { PanelComponent } from './panel/panel.component';
 
 const routes: Routes = [
-  {path: '', component: WrapperComponent}
+  {path: '', component: PanelComponent}
 ];
 
 @NgModule({

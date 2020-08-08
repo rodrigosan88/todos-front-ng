@@ -1,0 +1,12 @@
+@import '~@angular/material/theming';
+
+@include mat-core();
+
+$todos-primary: mat-palette($mat-indigo, 800);
+$todos-accent:  mat-palette($mat-amber, 800);
+
+$todos-warn:    mat-palette($mat-red);
+
+$todos-theme: mat-dark-theme($todos-primary, $todos-accent, $todos-warn);
+
+@include angular-material-theme($todos-theme);
